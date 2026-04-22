@@ -1,33 +1,37 @@
 # Piljenjedrva
 
-Produkcioni sajt za usluge secenja/piljenja drva sa javnom prezentacijom usluga i kontakt mehanizmom.
+Production website for wood-cutting and related services, including a public service presentation and contact flow.
 
-## Tehnologije
+## Tech Stack
 
 - PHP
 - HTML/CSS/JavaScript
 - Composer (`composer.json`)
 
-## Bitni fajlovi
+## Project Structure
 
-- `index.php`: glavna stranica
-- `send_email.php`: slanje upita sa sajta
-- `style.css`, `script.js`: vizuelni i interaktivni sloj
-- `robots.txt`, `sitemap.xml`: SEO osnove
+- `index.php`: homepage
+- `send_email.php`: contact email endpoint
+- `style.css`, `script.js`: styling and interactions
+- `robots.txt`, `sitemap.xml`: SEO baseline files
 
-## Lokalno pokretanje
+## Local Preview
 
 ```bash
 composer install
 php -S 127.0.0.1:8080
 ```
 
-## Live Preview
+## Live Site
 
 - https://piljenjedrva.svilenkovic.com
 
-## Odrzavanje i bezbednost
+## Security & Operations
 
-- Nikad ne komituj tajne kredencijale za SMTP/API.
-- Testiraj `send_email.php` u staging okruzenju pre produkcionog deploy-a.
-- Redovno proveravaj anti-spam i validaciju inputa u formama.
+- Do not commit SMTP/API credentials.
+- Test `send_email.php` in staging before production deployment.
+- Keep form input validation and anti-spam protections active.
+
+## Language Note
+
+The website content is intentionally in Serbian for the target audience.
